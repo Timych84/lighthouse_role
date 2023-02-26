@@ -23,7 +23,7 @@
   ansible.builtin.git:
     repo: "{{ lighthouse_repo_url }}"
     dest: "{{ document_root }}/lighthouse_repo"
-    version: d701335
+    version: "{{ git_version_hash }}"
   ignore_errors: "{{ ansible_check_mode }}"
 - name: Install lighthouse | Copy lighthouse to site folder
   ansible.posix.synchronize:
