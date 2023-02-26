@@ -1,0 +1,4 @@
+---
+# defaults file for lighthouse-role
+document_root: /var/www/html
+app_root: lighthouse
