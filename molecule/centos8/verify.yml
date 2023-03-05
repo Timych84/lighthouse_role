@@ -11,7 +11,7 @@
       ansible.builtin.assert:
         that:
           - temp__service_facts.ansible_facts.services["nginx.service"].state == 'running'
-    - name: Validate lighthouse nginx config
+    - name: Verify lighthouse | Validate lighthouse nginx config
       ansible.builtin.command: "nginx -t"
       changed_when: false
       register: nginx_rc
